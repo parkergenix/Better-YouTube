@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>Better YouTube</title>
+        <link>https://raw.githubusercontent.com/parkergenix/Better-YouTube/main/appcast.xml</link>
+        <description>Most recent updates to Better YouTube.</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.0</title>
+            <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/parkergenix/Better-YouTube/releases/download/v1.0.0/Better-YouTube-v1.0.0.zip"
+                sparkle:version="1"
+                sparkle:shortVersionString="1.0"
+                sparkle:edSignature="qgJhWjSKIiEEAHVZZPmzDq8u+RlczHI1dgTsesYYc3qAHVv5yTNOaWl0lAWSRM3dnYyYZqUeKqRrdNrMJqmMAA=="
+                length="1447301"
+                type="application/octet-stream"
+            />
+        </item>
+    </channel>
+</rss>

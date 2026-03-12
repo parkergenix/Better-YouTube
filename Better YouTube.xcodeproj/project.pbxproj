@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E15421192F626F7E007E2B0F /* Better YouTube Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E15421182F626F7E007E2B0F /* Better YouTube Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1B4BEB92F62A85800DEBFAC /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = E1B4BEB82F62A85800DEBFAC /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B4BEB92F62A85800DEBFAC /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +129,7 @@
 			);
 			name = "Better YouTube";
 			packageProductDependencies = (
+				E1B4BEB82F62A85800DEBFAC /* Sparkle */,
 			);
 			productName = "Better YouTube";
 			productReference = E15420FE2F626F7C007E2B0F /* Better YouTube.app */;
@@ -181,6 +184,9 @@
 			);
 			mainGroup = E15420F52F626F7C007E2B0F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E1B4BEB72F62A85800DEBFAC /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E15420FF2F626F7C007E2B0F /* Products */;
 			projectDirPath = "";
@@ -435,15 +441,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MW4CNFS2BH;
-				ENABLE_APP_SANDBOX = YES;
+				CODE_SIGN_ENTITLEMENTS = "Better YouTube/Better YouTube.entitlements";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Better YouTube";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Better YouTube/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -478,15 +482,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MW4CNFS2BH;
-				ENABLE_APP_SANDBOX = YES;
+				CODE_SIGN_ENTITLEMENTS = "Better YouTube/Better YouTube.entitlements";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Better YouTube";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Better YouTube/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -542,6 +544,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1B4BEB72F62A85800DEBFAC /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1B4BEB82F62A85800DEBFAC /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B4BEB72F62A85800DEBFAC /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E15420F62F626F7C007E2B0F /* Project object */;
 }
