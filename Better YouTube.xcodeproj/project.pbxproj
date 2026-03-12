@@ -48,11 +48,21 @@
 			);
 			target = E15421172F626F7E007E2B0F /* Better YouTube Extension */;
 		};
+		E15421402F626F7E007E2B0F /* Exceptions for "Better YouTube" folder in "Better YouTube" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E15420FD2F626F7C007E2B0F /* Better YouTube */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E15421002F626F7C007E2B0F /* Better YouTube */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E15421402F626F7E007E2B0F /* Exceptions for "Better YouTube" folder in "Better YouTube" target */,
+			);
 			path = "Better YouTube";
 			sourceTree = "<group>";
 		};
