@@ -3,7 +3,7 @@
 
     --red: #ff0000;
     --green: #34c759;
-    --bg: rgba(255, 255, 255, 0.55);
+    --bg: rgba(255, 255, 255, 0.28);
     --bg-secondary: rgba(0, 0, 0, 0.06);
     --text-primary: #0f0f0f;
     --text-secondary: #606060;
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: rgba(40, 40, 40, 0.6);
+        --bg: rgba(40, 40, 40, 0.28);
         --bg-secondary: rgba(255, 255, 255, 0.07);
         --text-primary: #f1f1f1;
         --text-secondary: #aaaaaa;
@@ -39,7 +39,7 @@ body {
         -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     font-size: 13px;
     width: 280px;
-    padding: 16px 16px 28px;
+    padding: 16px 16px 20px;
     line-height: 1.4;
 }
 
@@ -61,12 +61,11 @@ body {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    background: rgba(30, 100, 255, 0.15);
+    background: transparent;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 12px rgba(30, 100, 255, 0.3);
 }
 
 .title-wrap {
@@ -229,14 +228,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 12px;
+    padding: 14px 12px;
     background: var(--bg);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-radius: 10px;
+    border-radius: 14px;
     border: 1px solid var(--border);
     margin-top: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     gap: 10px;
     transition: opacity 0.2s ease;
 }
