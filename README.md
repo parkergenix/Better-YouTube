@@ -4,9 +4,9 @@ A Safari extension for macOS that cleans up your YouTube experience with a few f
 
 ## Features
 
-- **Theater mode** — automatically opens videos in theater mode
-- **Auto quality** — sets video quality via a customizable keyboard shortcut
-- **Custom shortcut** — bind any key to trigger quality selection on demand
+- **Auto Highest Quality** — automatically selects 4K / 1440p / 1080p instead of Auto
+- **Theater Mode** — forces wide player on every video
+- **Keyboard shortcut** — toggle auto quality on/off with a customizable key (default: Q)
 
 ## Requirements
 
@@ -29,4 +29,4 @@ Updates are delivered automatically via the built-in updater. You can also check
 
 ## Feedback & Suggestions
 
-Open a [GitHub Discussion](https://github.com/parkergenix/Better-YouTube/discussions) to suggest features or report issues.
+Open an [Issue](https://github.com/parkergenix/Better-YouTube/issues) to suggest features or report bugs.
