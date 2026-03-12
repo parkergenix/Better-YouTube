@@ -10,7 +10,7 @@ A Safari extension for macOS that cleans up your YouTube experience with a few f
 
 ## Requirements
 
-- macOS 13 or later
+- macOS 14 or later
 - Safari
 
 ## Installation
