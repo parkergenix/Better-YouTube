@@ -3,24 +3,24 @@
 
     --red: #ff0000;
     --green: #34c759;
-    --bg: #ffffff;
-    --bg-secondary: #f2f2f2;
+    --bg: rgba(255, 255, 255, 0.55);
+    --bg-secondary: rgba(0, 0, 0, 0.06);
     --text-primary: #0f0f0f;
     --text-secondary: #606060;
-    --border: #e5e5e5;
-    --toggle-off: #d1d1d1;
-    --setting-divider: #f0f0f0;
+    --border: rgba(0, 0, 0, 0.1);
+    --toggle-off: #c7c7c7;
+    --setting-divider: rgba(0, 0, 0, 0.07);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #212121;
-        --bg-secondary: #2f2f2f;
+        --bg: rgba(40, 40, 40, 0.6);
+        --bg-secondary: rgba(255, 255, 255, 0.07);
         --text-primary: #f1f1f1;
         --text-secondary: #aaaaaa;
-        --border: #3f3f3f;
+        --border: rgba(255, 255, 255, 0.1);
         --toggle-off: #555555;
-        --setting-divider: #2f2f2f;
+        --setting-divider: rgba(255, 255, 255, 0.06);
     }
 }
 
@@ -33,13 +33,13 @@
 }
 
 body {
-    background: var(--bg);
+    background: transparent;
     color: var(--text-primary);
     font-family:
         -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     font-size: 13px;
     width: 280px;
-    padding: 16px;
+    padding: 16px 16px 28px;
     line-height: 1.4;
 }
 
@@ -61,11 +61,12 @@ body {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    background: transparent;
+    background: rgba(30, 100, 255, 0.15);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 12px rgba(30, 100, 255, 0.3);
 }
 
 .title-wrap {
@@ -131,6 +132,13 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 0;
+    background: var(--bg);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    padding: 0 12px;
+    overflow: hidden;
 }
 
 .setting-row {
@@ -221,10 +229,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 12px;
-    background: var(--bg-secondary);
+    padding: 10px 12px;
+    background: var(--bg);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-radius: 10px;
+    border: 1px solid var(--border);
     margin-top: 8px;
+    margin-bottom: 4px;
     gap: 10px;
     transition: opacity 0.2s ease;
 }
