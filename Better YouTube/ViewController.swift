@@ -9,7 +9,7 @@ import Cocoa
 import SafariServices
 import WebKit
 
-let extensionBundleIdentifier = "s.Always-Theater-Mode.Extension"
+let extensionBundleIdentifier = "s.Better-YouTube.Extension"
 
 class ViewController: NSViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
