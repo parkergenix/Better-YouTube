@@ -1,0 +1,10 @@
+{
+  "extension_name": {
+    "message": "Better YouTube",
+    "description": "The display name for the extension."
+  },
+  "extension_description": {
+    "message": "Automatically opens YouTube videos in theater mode and sets the highest available quality on every visit, even when logged out.",
+    "description": "Description of what the extension does."
+  }
+}

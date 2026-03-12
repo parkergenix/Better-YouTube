@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <div class="icon-wrap">
+                    <img
+                        src="images/icon-48.png"
+                        width="28"
+                        height="28"
+                        alt="Better YouTube"
+                    />
+                </div>
+                <div class="title-wrap">
+                    <h1>Better YouTube</h1>
+                    <div class="badge">
+                        <span class="dot"></span>
+                        <span>Active</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Settings -->
+            <div class="settings">
+                <!-- Theater Mode toggle -->
+                <div class="setting-row">
+                    <div class="setting-text">
+                        <span class="setting-name">Theater Mode</span>
+                        <span class="setting-desc"
+                            >Forces wide player on every video</span
+                        >
+                    </div>
+                    <label class="toggle" aria-label="Toggle theater mode">
+                        <input type="checkbox" id="theater-toggle" />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="setting-divider"></div>
+
+                <!-- Auto Quality toggle -->
+                <div class="setting-row">
+                    <div class="setting-text">
+                        <span class="setting-name">Auto Highest Quality</span>
+                        <span class="setting-desc"
+                            >Sets 4K / 1440p / 1080p instead of Auto</span
+                        >
+                    </div>
+                    <label
+                        class="toggle"
+                        aria-label="Toggle auto highest quality"
+                    >
+                        <input type="checkbox" id="quality-toggle" />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <!-- Shortcut row (under quality) -->
+                <div class="shortcut-row" id="shortcut-row">
+                    <span class="shortcut-label">Toggle shortcut</span>
+                    <div class="shortcut-right">
+                        <span class="shortcut-hint" id="shortcut-hint"
+                            >click to change</span
+                        >
+                        <input
+                            type="text"
+                            id="shortcut-key"
+                            class="key-cap"
+                            maxlength="1"
+                            readonly
+                            value="Q"
+                            spellcheck="false"
+                            autocomplete="off"
+                            autocorrect="off"
+                            aria-label="Shortcut key"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
